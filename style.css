@@ -1,0 +1,123 @@
+/* 1. Reset / Normalize */
+@import url('https://cdn.jsdelivr.net/npm/normalize.css');
+
+/* 2. CSS varijable za temu */
+:root {
+  --color-primary: #37474F;
+  --color-secondary: #455A64;
+  --color-accent: #FF8A65;
+  --color-light: #ECEFF1;
+  --font-base: 'Roboto', sans-serif;
+}
+
+/* 3. Base typography & body */
+body {
+  font-family: var(--font-base);
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-primary);
+}
+
+/* 4. Navbar overrides */
+.navbar {
+  background-color: var(--color-primary) !important;
+}
+.navbar a,
+.navbar-brand {
+  color: var(--color-light) !important;
+}
+
+/* 5. Hero sekcija */
+.hero {
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* 6. Call-to-action dugme */
+.btn-cta {
+  background-color: var(--color-accent);
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.btn-cta:hover {
+  background-color: #FF7043;
+  color: #fff;
+}
+
+/* 7. Stilovi za service cards */
+.service-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 8. Footer sekcije */
+.contact-footer,
+.sitemap {
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: 2rem;
+}
+.contact-footer a,
+.sitemap a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.contact-footer a:hover,
+.sitemap a:hover {
+  text-decoration: underline;
+}
+
+/* 9. Responsive prilagođavanja */
+@media (max-width: 768px) {
+  /* ovde dodaj mobile-specifične stilove ako treba */
+}
+
+/* ——— Services Grid ——— */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* tablet */
+  @media (max-width: 991px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* mobilni */
+  @media (max-width: 767px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* ——— Service Card Hover & Transition ——— */
+  .service-card {
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .service-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* ——— Aspect Ratio za slike ——— */
+  .service-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+  

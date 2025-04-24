@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lista osmrtnica i umrlica uz mogućnost pretrage. Prikazujemo najnovijih 12 umrlica i arhivu sa učitavanjem više.">
+  <title>Osmrtnice - Sa weba do neba</title>
+  <link rel="icon" href="img/favicon2.ico">
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sa weba do neba</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+          <li class="nav-item"><a class="nav-link" href="o-nama.html">O nama</a></li>
+          <li class="nav-item"><a class="nav-link" href="usluge.html">Usluge</a></li>
+          <li class="nav-item"><a class="nav-link" href="cene.html">Paketi &amp; Cene</a></li>
+          <li class="nav-item"><a class="nav-link active" href="umrlice.html">Umrlice</a></li>
+          <li class="nav-item"><a class="nav-link" href="vodic.html">Vodič</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- GLAVNI SADRŽAJ -->
+  <main class="container my-5">
+
+    <!-- Pretraga -->
+    <div class="mb-4">
+      <input 
+        id="searchInput" 
+        type="text" 
+        class="form-control" 
+        placeholder="Pretraži umrlice po imenu ili datumu..."
+      >
+    </div>
+
+    <!-- Grid najnovijih 12 -->
+    <section class="umrlice-grid services-grid">
+      <!-- Primer jednog članka (ponoviti ×12, menjajući sliku, ime, datum i tekst) -->
+      <article class="service-card mb-4">
+        <img 
+          src="img/10.jpg" 
+          loading="lazy" 
+          alt="Marko Marković" 
+        >
+        <h2>Marko Marković</h2>
+        <time datetime="2025-04-20">20. april 2025.</time>
+        <p>Marko Marković je preminuo u miru okružen porodicom.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/11.jpg" loading="lazy" alt="Petar Petrović">
+        <h2>Petar Petrović</h2>
+        <time datetime="2025-04-19">19. april 2025.</time>
+        <p>Petar Petrović je preminuo posle duge bolesti u Beogradu.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/12.jpg" loading="lazy" alt="Jelena Jelenić">
+        <h2>Jelena Jelenić</h2>
+        <time datetime="2025-04-18">18. april 2025.</time>
+        <p>Jelena Jelenić je nastradala iznenada, ostaviši neizbrisiv trag ljubavi.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/13.jpg" loading="lazy" alt="Milan Milić">
+        <h2>Milan Milić</h2>
+        <time datetime="2025-04-17">17. april 2025.</time>
+        <p>Milan Milić je umro nakon kratke bolesti, okružen prijateljima.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/14.jpg" loading="lazy" alt="Ana Anić">
+        <h2>Ana Anić</h2>
+        <time datetime="2025-04-16">16. april 2025.</time>
+        <p>Ana Anić nas je napustila u miru, uz najdraže uspomene.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/15.jpg" loading="lazy" alt="Ivana Ivanović">
+        <h2>Ivana Ivanović</h2>
+        <time datetime="2025-04-15">15. april 2025.</time>
+        <p>Ivana Ivanović je preminula tiho i dostojanstveno.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/16.jpg" loading="lazy" alt="Stefan Stefanić">
+        <h2>Stefan Stefanić</h2>
+        <time datetime="2025-04-14">14. april 2025.</time>
+        <p>Stefan Stefanić je izgubio bitku, ali pobedu u srcima.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/17.jpg" loading="lazy" alt="Marija Marijanić">
+        <h2>Marija Marijanić</h2>
+        <time datetime="2025-04-13">13. april 2025.</time>
+        <p>Marija Marijanić će živeti kroz uspomene svih nas.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/18.jpg" loading="lazy" alt="Nikola Nikolić">
+        <h2>Nikola Nikolić</h2>
+        <time datetime="2025-04-12">12. april 2025.</time>
+        <p>Nikola Nikolić je preminuo u tišini, okružen ljubavlju.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/19.jpg" loading="lazy" alt="Katarina Katarin">
+        <h2>Katarina Katarin</h2>
+        <time datetime="2025-04-11">11. april 2025.</time>
+        <p>Katarina Katarin nas je napustila prerano, ali ne zaboravljena.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/20.jpg" loading="lazy" alt="Aleksandar Aleksić">
+        <h2>Aleksandar Aleksić</h2>
+        <time datetime="2025-04-10">10. april 2025.</time>
+        <p>Aleksandar Aleksić je preminuo dostojanstveno, sa porodicom kraj sebe.</p>
+      </article>
+      <article class="service-card mb-4">
+        <img src="img/21.jpg" loading="lazy" alt="Milica Milić">
+        <h2>Milica Milić</h2>
+        <time datetime="2025-04-09">09. april 2025.</time>
+        <p>Milica Milić nas je napustila, ali ostavlja večnu svetlost.</p>
+      </article>
+    </section>
+
+    <!-- Arhiva sa Load More -->
+    <section class="archive mt-5">
+      <ul class="list-group" id="archiveList">
+        <!-- Prvih 10 vidljivo -->
+        <li class="list-group-item">
+          <strong>Luka Luković</strong> | <time datetime="2025-04-08">08. april 2025.</time>
+          <p class="mb-0">Luka Luković je preminuo iznenada, ostavivši prazninu.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Jovana Jovanović</strong> | <time datetime="2025-04-07">07. april 2025.</time>
+          <p class="mb-0">Jovana Jovanović je mirno zaspala i prešla na bolji svet.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Nemanja Nemanjić</strong> | <time datetime="2025-04-06">06. april 2025.</time>
+          <p class="mb-0">Nemanja Nemanjić nas je napustio posle duge bolesti.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Sara Saranić</strong> | <time datetime="2025-04-05">05. april 2025.</time>
+          <p class="mb-0">Sara Saranić je preminula tiho, ali nije zaboravljena.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Vladimir Vladimirov</strong> | <time datetime="2025-04-04">04. april 2025.</time>
+          <p class="mb-0">Vladimir Vladimirov je preminuo dostojanstveno.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Tamara Tamarović</strong> | <time datetime="2025-04-03">03. april 2025.</time>
+          <p class="mb-0">Tamara Tamarović je ostavila neizbrisiv trag ljubavi.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Boško Bošković</strong> | <time datetime="2025-04-02">02. april 2025.</time>
+          <p class="mb-0">Boško Bošković nas je napustio prerano.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Danica Danica</strong> | <time datetime="2025-04-01">01. april 2025.</time>
+          <p class="mb-0">Danica Danica je preminula, ostavljajući svetlо uspomena.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Dragan Dragić</strong> | <time datetime="2025-03-31">31. mart 2025.</time>
+          <p class="mb-0">Dragan Dragić je umro mirno, okružen porodicom.</p>
+        </li>
+        <li class="list-group-item">
+          <strong>Tatjana Tatjana</strong> | <time datetime="2025-03-30">30. mart 2025.</time>
+          <p class="mb-0">Tatjana Tatjana je preminula tiho, draga svima.</p>
+        </li>
+        <!-- Sledećih 10 sakriveno -->
+        <li class="list-group-item d-none">
+          <strong>Mihajlo Mihajlović</strong> | <time datetime="2025-03-29">29. mart 2025.</time>
+          <p class="mb-0">Mihajlo Mihajlović je izgubio bitku sa bolešću.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Dragana Dragićević</strong> | <time datetime="2025-03-28">28. mart 2025.</time>
+          <p class="mb-0">Dragana Dragićević nas je ostavila prerano.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Jasmina Jasnić</strong> | <time datetime="2025-03-27">27. mart 2025.</time>
+          <p class="mb-0">Jasmina Jasnić je preminula, ali živi kroz uspomene.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Filip Filić</strong> | <time datetime="2025-03-26">26. mart 2025.</time>
+          <p class="mb-0">Filip Filić je preminuo, ostavljajući prazninu.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Sandra Sandrić</strong> | <time datetime="2025-03-25">25. mart 2025.</time>
+          <p class="mb-0">Sandra Sandrić je preminula u miru.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Goran Goranović</strong> | <time datetime="2025-03-24">24. mart 2025.</time>
+          <p class="mb-0">Goran Goranović je preminuo posle duge bolesti.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Vesna Vesnić</strong> | <time datetime="2025-03-23">23. mart 2025.</time>
+          <p class="mb-0">Vesna Vesnić nas je napustila prerano.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Zoran Zoranić</strong> | <time datetime="2025-03-22">22. mart 2025.</time>
+          <p class="mb-0">Zoran Zoranić je preminuo dostojanstveno.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Nada Nadić</strong> | <time datetime="2025-03-21">21. mart 2025.</time>
+          <p class="mb-0">Nada Nadić je izgubila bitku, ali ne i sećanje.</p>
+        </li>
+        <li class="list-group-item d-none">
+          <strong>Maja Majković</strong> | <time datetime="2025-03-20">20. mart 2025.</time>
+          <p class="mb-0">Maja Majković je preminula, ostavljajući tople uspomene.</p>
+        </li>
+      </ul>
+      <div class="text-center mt-3">
+        <button id="loadMore" class="btn btn-cta">Prikaži još</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5>Kontakt</h5>
+          <p>
+            Telefon: <a href="tel:+38111223344" class="text-warning">+381 11 2233 44</a><br>
+            Email: <a href="mailto:info@sawebadoneba.rs" class="text-warning">info@sawebadoneba.rs</a><br>
+            Radno vreme: 0–24h
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h5>Mapa sajta</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-light" href="index.html">Početna</a></li>
+            <li><a class="text-light" href="o-nama.html">O nama</a></li>
+            <li><a class="text-light" href="usluge.html">Usluge</a></li>
+            <li><a class="text-light" href="cene.html">Paketi &amp; Cene</a></li>
+            <li><a class="text-light" href="umrlice.html">Umrlice</a></li>
+            <li><a class="text-light" href="vodic.html">Vodič</a></li>
+            <li><a class="text-light" href="faq.html">FAQ</a></li>
+            <li><a class="text-light" href="blog.html">Blog</a></li>
+            <li><a class="text-light" href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center">&copy; 2025 Sa weba do neba. Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script>
+    // Live search filter
+    document.getElementById('searchInput').addEventListener('input', function() {
+      const term = this.value.toLowerCase();
+      // grid filter
+      document.querySelectorAll('.umrlice-grid .service-card').forEach(card => {
+        card.style.display = card.textContent.toLowerCase().includes(term) ? '' : 'none';
+      });
+      // list filter
+      document.querySelectorAll('#archiveList .list-group-item').forEach(item => {
+        item.style.display = item.textContent.toLowerCase().includes(term) ? '' : 'none';
+      });
+    });
+
+    // Load more archive items
+    document.getElementById('loadMore').addEventListener('click', function() {
+      document.querySelectorAll('#archiveList .d-none').forEach(item => {
+        item.classList.remove('d-none');
+      });
+      this.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
