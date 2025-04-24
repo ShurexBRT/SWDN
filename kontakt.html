@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kontaktirajte nas 24/7 – pošaljite poruku, pozovite ili započnite chat. Sa weba do neba je tu za vas.">
+  <title>Kontakt - Sa weba do neba</title>
+  <link rel="icon" href="img/favicon2.ico">
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnH1zJHrIY59kkP1e3tp9r1g6I1B0FhYk8Jjy6Jk65fj8cW2lYOUNpD1UJ1jLhE1VU6Ym18AA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  >
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- ContactPage + LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "Sa weba do neba",
+      "image": "https://sawebadoneba.rs/img/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bratstva i jedinstva 105",
+        "addressLocality": "Beograd",
+        "addressCountry": "RS"
+      },
+      "telephone": "+38111223344",
+      "email": "info@sawebadoneba.rs",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "url": "https://sawebadoneba.rs/kontakt.html"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sa weba do neba</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+          <li class="nav-item"><a class="nav-link" href="o-nama.html">O nama</a></li>
+          <li class="nav-item"><a class="nav-link" href="usluge.html">Usluge</a></li>
+          <li class="nav-item"><a class="nav-link" href="cene.html">Paketi i Cene</a></li>
+          <li class="nav-item"><a class="nav-link" href="umrlice.html">Umrlice</a></li>
+          <li class="nav-item"><a class="nav-link" href="vodic.html">Vodič</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="kontakt.html">Kontakt</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-light py-5 text-center">
+    <div class="container">
+      <h1>Kontaktirajte nas 24/7</h1>
+      <p class="lead">Tu smo za vas – pošaljite poruku, pozovite ili započnite chat odmah.</p>
+      <a href="tel:+38111223344" class="btn btn-cta me-2"><i class="fas fa-phone-alt"></i> Pozovite odmah</a>
+      <a href="mailto:info@sawebadoneba.rs" class="btn btn-outline-cta"><i class="fas fa-envelope"></i> Pošaljite email</a>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="container my-5">
+    <div class="row gx-5">
+
+      <!-- Kontakt forma -->
+      <div class="col-lg-6 mb-4">
+        <h2>Pošaljite poruku</h2>
+        <form>
+          <div class="mb-3">
+            <label for="contactName" class="form-label">Ime i prezime</label>
+            <input type="text" class="form-control" id="contactName" required>
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label">Email adresa</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="contactMessage" class="form-label">Poruka</label>
+            <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-cta">Pošalji poruku</button>
+        </form>
+      </div>
+
+      <!-- Kontakt info -->
+      <div class="col-lg-6">
+        <h2>Naša lokacija</h2>
+        <!-- Google Maps embed (zamenite YOUR_API_KEY) -->
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=myMap"></script>
+        <div class="mb-4">
+          <iframe 
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Bratstva+i+jedinstva+105,Beograd" 
+            width="100%" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <h3>Adresa</h3>
+        <p>Bratstva i jedinstva 105, Beograd, Srbija</p>
+
+        <h3>Radno vreme</h3>
+        <ul class="list-unstyled mb-3">
+          <li>Ponedeljak – Nedelja: 00:00 – 23:59</li>
+          <li><em>Odgovaramo unutar 2 sata</em></li>
+        </ul>
+
+        <h3>Pratite nas</h3>
+        <p>
+          <a href="#" class="me-2 text-dark"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="#" class="me-2 text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="me-2 text-dark"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-dark"><i class="fab fa-whatsapp fa-lg"></i></a>
+        </p>
+
+        <h3>Live chat</h3>
+        <a 
+          href="https://wa.me/38111223344" 
+          target="_blank" 
+          class="btn btn-success"
+        >
+          <i class="fab fa-whatsapp"></i> Započni chat na WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Mini FAQ -->
+    <section class="mt-5">
+      <h2>Često postavljana pitanja</h2>
+      <div class="accordion" id="contactFaqAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="cfHeadingOne">
+            <button 
+              class="accordion-button" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#cfCollapseOne" 
+              aria-expanded="true" 
+              aria-controls="cfCollapseOne"
+            >
+              Koliko brzo možemo da odgovorimo na vašu poruku?
+            </button>
+          </h2>
+          <div 
+            id="cfCollapseOne" 
+            class="accordion-collapse collapse show" 
+            aria-labelledby="cfHeadingOne" 
+            data-bs-parent="#contactFaqAccordion"
+          >
+            <div class="accordion-body">
+              Odgovaramo unutar dva sata u radnom vremenu; u hitnim slučajevima dostupni smo 0–24h.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="cfHeadingTwo">
+            <button 
+              class="accordion-button collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#cfCollapseTwo" 
+              aria-expanded="false" 
+              aria-controls="cfCollapseTwo"
+            >
+              Koja dokumenta su potrebna za kontaktiranje vaše službe?
+            </button>
+          </h2>
+          <div 
+            id="cfCollapseTwo" 
+            class="accordion-collapse collapse" 
+            aria-labelledby="cfHeadingTwo" 
+            data-bs-parent="#contactFaqAccordion"
+          >
+            <div class="accordion-body">
+              Za inicijalni kontakt putem forme nisu potrebna dokumenta; sve detalje možete dostaviti u daljem dogovoru.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="cfHeadingThree">
+            <button 
+              class="accordion-button collapsed" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#cfCollapseThree" 
+              aria-expanded="false" 
+              aria-controls="cfCollapseThree"
+            >
+              Da li radite vikendom i praznicima?
+            </button>
+          </h2>
+          <div 
+            id="cfCollapseThree" 
+            class="accordion-collapse collapse" 
+            aria-labelledby="cfHeadingThree" 
+            data-bs-parent="#contactFaqAccordion"
+          >
+            <div class="accordion-body">
+              Da—radimo non-stop sedam dana u nedelji, uključujući vikende i praznike.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5>Kontakt</h5>
+          <p>
+            Telefon: <a href="tel:+38111223344" class="text-warning">+381 11 2233 44</a><br>
+            Email: <a href="mailto:info@sawebadoneba.rs" class="text-warning">info@sawebadoneba.rs</a><br>
+            Radno vreme: 0–24h
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h5>Mapa sajta</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-light" href="index.html">Početna</a></li>
+            <li><a class="text-light" href="o-nama.html">O nama</a></li>
+            <li><a class="text-light" href="usluge.html">Usluge</a></li>
+            <li><a class="text-light" href="cene.html">Paketi i Cene</a></li>
+            <li><a class="text-light" href="umrlice.html">Umrlice</a></li>
+            <li><a class="text-light" href="vodic.html">Vodič</a></li>
+            <li><a class="text-light" href="faq.html">FAQ</a></li>
+            <li><a class="text-light" href="blog.html">Blog</a></li>
+            <li><a class="text-light" href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center">&copy; 2025 Sa weba do neba. Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
